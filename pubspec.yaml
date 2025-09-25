@@ -23,8 +23,8 @@ dependencies:
   provider: ^6.1.1
   shared_preferences: ^2.2.2
   carousel_slider: ^4.2.1
-  flutter_local_notifications: ^16.3.0
-  timezone: ^0.9.2
+  #flutter_local_notifications: ^16.3.0
+  #timezone: ^0.9.2
   intl: ^0.18.1
 
 dev_dependencies:
@@ -34,17 +34,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  
-  assets:
-    - assets/images/
-    - assets/icons/
-    - assets/videos/
 
-  fonts:
-    - family: Poppins
-      fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Poppins-Light.ttf
-          weight: 300
+  # Assets and fonts sections removed to fix build errors
+  # You can add them back later when you have the actual files
