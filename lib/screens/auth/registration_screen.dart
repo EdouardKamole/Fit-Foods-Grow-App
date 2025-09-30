@@ -50,16 +50,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         int.parse(_ageController.text),
       );
 
-      if (user != null) {
-        // For now, navigate directly to home screen
-        // Parent consent can be implemented later
-        Navigator.pushAndRemoveUntil(
-          context,
-          MaterialPageRoute(builder: (context) => const HomeScreen()),
-          (route) => false,
-        );
-      }
-    } catch (e) {
+      // For now, navigate directly to home screen
+      // Parent consent can be implemented later
+      Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        (route) => false,
+      );
+        } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Registration failed: ${e.toString()}'),
